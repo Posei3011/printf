@@ -7,6 +7,9 @@
 #include <limits.h>
 #include <unistd.h>
 
+#define UNUSED(x) (void)(x)
+#define BUFF_SIZE 1024
+
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
@@ -53,6 +56,7 @@ int printf_char(va_list val);
 int printf_string(va_list val);
 int _putchar(char c);
 int _printf(const char *format, ...);
+int get_flags(const char *fmt, int *i);
 
 #endif
 
