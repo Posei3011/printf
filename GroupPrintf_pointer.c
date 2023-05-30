@@ -1,27 +1,25 @@
 #include "main.h"
 
 /**
- * Groupprintf_pointer - prints an hexgecimal number.
+ * Groupprintf_pointer - prints an hexadecimal number.
  * by Priscilla and Afua
- * @val: arguments.
+ *Description: the function takes a void* argument and returns an int 
+ *representing the number of characters printed.
+ * @val: a pointer argument passed as a va_list
  * Return: counter.
  */
 int Groupprintf_pointer(va_list val)
 {
 	void *p;
 	char *s = "(nil)";
-	long int a;
+	unsigned long int a;
 	int b;
-	int i;
 
 	p = va_arg(val, void*);
 	if (p == NULL)
 	{
-		for (i = 0; s[i] != '\0'; i++)
-		{
-			_putchar(s[i]);
-		}
-		return (i);
+		puts(s);
+		return (5);
 	}
 
 	a = (unsigned long int)p;

@@ -88,4 +88,3 @@ int printf_dec(va_list args)
 
 	return (i);
 }
-

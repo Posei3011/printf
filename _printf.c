@@ -10,8 +10,9 @@ int _printf(const char * const format, ...)
 		{"%s", printf_string}, {"%c", printf_char},
 		{"%%", Groupprintf_37},
 		{"%i", Groupprintf_int}, {"%d", printf_dec}, {"%r", Groupprintf_srev},
-		{"%R", Groupprintf_rot13}, {"%b", Groupprintf_bin}, {"%u", Groupprintf_unsigned},
-		{"%o", Groupprintf_oct}, {"%x", Groupprintf_hex}, {"%X", Groupprintf_HEX},
+		{"%R", Groupprintf_rot13}, {"%b", Groupprintf_bin},
+		{"%u", Groupprintf_unsigned}, {"%o", Groupprintf_oct},
+		{"%x", Groupprintf_hex}, {"%X", Groupprintf_HEX},
 		{"%S", Groupprintf_exclusive_string}, {"%p", Groupprintf_pointer}
 	};
 
@@ -19,6 +20,7 @@ int _printf(const char * const format, ...)
 	int i = 0, j, len = 0;
 
 	va_start(args, format);
+
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
@@ -40,7 +42,7 @@ Here:
 		len++;
 		i++;
 	}
+
 	va_end(args);
 	return (len);
 }
-
