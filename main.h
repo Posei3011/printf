@@ -7,6 +7,16 @@
 #include <limits.h>
 #include <unistd.h>
 
+/* FLAGS */
+#define F_MINUS 1
+#define F_PLUS 2
+#define F_ZERO 4
+#define F_HASH 8
+#define F_SPACE 16
+
+/* SIZES */
+#define S_LONG 2
+#define S_SHORT 1
 
 
 /**
@@ -45,6 +55,11 @@ int printf_char(va_list val);
 int printf_string(va_list val);
 int _putchar(char c);
 int _printf(const char *format, ...);
+int groupget_flags(const char *format, int *b);
+int group_width(const char *format, int *i, va_list list);
+int get_precision(const char *format, int *b, va_list list);
+int Groupget_size(const char *format, int *i);
+
 
 #endif
 
