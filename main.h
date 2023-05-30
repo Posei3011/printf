@@ -59,7 +59,7 @@ int groupget_flags(const char *format, int *b);
 int group_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *b, va_list list);
 int Groupget_size(const char *format, int *i);
-
+int is_digit(char);
 
 #endif
 
