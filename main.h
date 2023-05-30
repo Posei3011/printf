@@ -109,7 +109,7 @@ char buffer[],
 /****************** UTILS ******************/
 int Gis_printable(char);
 int Gappend_hexa_code(char, char[], int);
-int is_digit(char);
+int is_digitA(char);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);

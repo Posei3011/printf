@@ -4,6 +4,7 @@
 
 /**
  * print_char - Prints a char
+ * by Priscilla and Afua
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -25,7 +26,7 @@ int print_char(va_list types, char buffer[],
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
- * @width: get width.
+ * @width: group width.
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed

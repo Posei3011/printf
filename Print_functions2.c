@@ -3,7 +3,7 @@
 /****************** PRINT POINTER ******************/
 /**
  * print_pointer - Prints the value of a pointer variable
-* by Priscilla and Afua
+ * by Priscilla and Afua
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -59,7 +59,7 @@ int print_pointer(va_list types, char buffer[],
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
- * @width: get width
+ * @width: group width
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
@@ -100,8 +100,8 @@ int print_non_printable(va_list types, char buffer[],
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: group width
- * @precision: Precision specification
- * @size: Size specifier
+ * @precision: get_percision1
+ * @size: Gget_size
  * Return: Numbers of chars printed
  */
 
@@ -144,8 +144,8 @@ int print_reverse(va_list types, char buffer[],
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: group width
- * @precision: Precision specification
- * @size: Size specifier
+ * @precision: get_precision 1
+ * @size: Gget_size
  * Return: Numbers of chars printed
  */
 int print_rot13string(va_list types, char buffer[],
