@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * Groupprintf_pointer - prints an hexgecimal number.
+ * Groupprintf_pointer - prints an hexadecimal number.
  * by Priscilla and Afua
+ *Description: the function takes a void* argument and returns an int 
+ *representing the number of characters printed.
  * @val: a pointer argument passed as a va_list
  * Return: counter.
  */
