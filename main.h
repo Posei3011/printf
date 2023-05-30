@@ -7,23 +7,14 @@
 #include <limits.h>
 #include <unistd.h>
 
-<<<<<<< HEAD
 /* FLAGS */
-=======
-#define UNUSED(x) (void)(x)
-#define BUFF_SIZE 1024
-
->>>>>>> 5cdd78834b7f574280fccf3e9a0e1ac7f5cb2d51
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
 #define F_HASH 8
 #define F_SPACE 16
 
-<<<<<<< HEAD
 /* SIZES */
-=======
->>>>>>> 5cdd78834b7f574280fccf3e9a0e1ac7f5cb2d51
 #define S_LONG 2
 #define S_SHORT 1
 
@@ -64,15 +55,11 @@ int printf_char(va_list val);
 int printf_string(va_list val);
 int _putchar(char c);
 int _printf(const char *format, ...);
-<<<<<<< HEAD
 int groupget_flags(const char *format, int *b);
 int group_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *b, va_list list);
 int Groupget_size(const char *format, int *i);
 
-=======
-int Groupget_flags(const char *fmt, int *i);
->>>>>>> 5cdd78834b7f574280fccf3e9a0e1ac7f5cb2d51
 
 #endif
 
