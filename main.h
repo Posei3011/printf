@@ -56,7 +56,7 @@ int printf_char(va_list val);
 int printf_string(va_list val);
 int _putchar(char c);
 int _printf(const char *format, ...);
-int get_flags(const char *fmt, int *i);
+int Groupget_flags(const char *fmt, int *i);
 
 #endif
 
