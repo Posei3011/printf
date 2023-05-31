@@ -27,8 +27,17 @@
  * struct format - match the conversion specifiers for printf
  * @id: type char pointer of the specifier i.e (l, h) for (d, i, u, o, x, X)
  * @f: type pointer to function for the conversion specifier
+ * @fmt: The format
+ * @fn: The function associated
  *
  */
+
+struct fmt
+{
+	char fmt;
+	int (*fn)(va_list, char[], int, int, int, int);
+};
+
 
 typedef struct format
 {
@@ -66,6 +75,12 @@ int Groupget_size(const char *format, int *i);
 int is_digit(char);
 int is_printable(char);
 int append_hexa_code(char, char[], int);
+int Grouphandle_print(const char *fmt, int *i,
+va_list list, char buffer[], int flags, int width, int precision, int size);
+int grouphandle_write_char(char c, char buffer[],
+	int flags, int width, int precision, int size);
+int write_number(int is_positive, int ind, char buffer[],
+	int flags, int width, int precision, int size);
 
 #endif
 
